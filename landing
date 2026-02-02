@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ArrendaJá – Encontra a tua casa em Portugal</title>
+  <title>homie – Encontra a tua casa em Portugal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -190,7 +190,7 @@
 <body>
 
   <header>
-    <h1>ArrendaJá</h1>
+    <h1>homie</h1>
     <nav>
       <a href="#">Como funciona</a>
       <a href="#">Cidades</a>
@@ -240,7 +240,7 @@
   </section>
 
   <footer>
-    <p><strong>ArrendaJá</strong> · A nova forma de arrendar casa em Portugal</p>
+    <p><strong>homie</strong> · A nova forma de arrendar casa em Portugal</p>
   </footer>
 
 </body>
