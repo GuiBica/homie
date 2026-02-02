@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArrendaJá – Encontra a tua casa em Portugal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C2BD9;
+      --secondary: #00E0A4;
+      --accent: #FFB703;
+      --dark: #0F172A;
+      --light: #F8FAFC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--primary), #3B82F6);
+      color: var(--dark);
+    }
+
+    header {
+      padding: 32px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .hero {
+      padding: 96px 64px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-text h2 {
+      font-size: 52px;
+      font-weight: 800;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #E5E7EB;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .search-box {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .search-box input,
+    .search-box select {
+      flex: 1;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+      font-size: 14px;
+    }
+
+    .search-box button {
+      background: var(--secondary);
+      border: none;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .search-box button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    }
+
+    .hero-card img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .hero-card span {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    section.features {
+      background: var(--light);
+      padding: 96px 64px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background: white;
+      padding: 32px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .feature h4 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 48px 64px;
+      background: #020617;
+      color: #CBD5E1;
+      text-align: center;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 64px 32px;
+      }
+
+      header {
+        padding: 24px 32px;
+      }
+
+      section.features {
+        padding: 64px 32px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ArrendaJá</h1>
+    <nav>
+      <a href="#">Como funciona</a>
+      <a href="#">Cidades</a>
+      <a href="#">Entrar</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h2>Encontra a casa perfeita para arrendar em Portugal</h2>
+      <p>A forma mais rápida e moderna de procurar casas, apartamentos e quartos — sem stress, sem chamadas infinitas.</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Cidade ou zona" />
+        <select>
+          <option>Tipo</option>
+          <option>Apartamento</option>
+          <option>Moradia</option>
+          <option>Quarto</option>
+        </select>
+        <button>Procurar</button>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Casa moderna" />
+      <h3>T2 moderno em Lisboa</h3>
+      <p><span>1 200€</span> / mês · Parque das Nações</p>
+    </div>
+  </main>
+
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <h4>🔍 Pesquisa Inteligente</h4>
+        <p>Filtros avançados por preço, tipologia, localização e disponibilidade em tempo real.</p>
+      </div>
+      <div class="feature">
+        <h4>⚡ Contacto Rápido</h4>
+        <p>Fala diretamente com proprietários ou agências sem intermediários desnecessários.</p>
+      </div>
+      <div class="feature">
+        <h4>🔒 Seguro e Transparente</h4>
+        <p>Anúncios verificados, sem esquemas ou surpresas desagradáveis.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>ArrendaJá</strong> · A nova forma de arrendar casa em Portugal</p>
+  </footer>
+
+</body>
+</html>
