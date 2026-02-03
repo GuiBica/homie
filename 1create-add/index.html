@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicar Anúncio | homie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C2BD9;
+      --secondary: #00E0A4;
+      --accent: #FFB703;
+      --dark: #0F172A;
+      --light: #F8FAFC;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, var(--primary), #3B82F6);
+      display: flex;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .ad-container {
+      background: white;
+      max-width: 1100px;
+      width: 100%;
+      border-radius: 32px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+    }
+
+    .ad-info {
+      background: linear-gradient(160deg, var(--primary), #4F46E5);
+      color: white;
+      padding: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ad-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .ad-info p {
+      font-size: 18px;
+      color: #E5E7EB;
+      margin-bottom: 32px;
+    }
+
+    .ad-info ul {
+      list-style: none;
+    }
+
+    .ad-info li {
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .ad-form {
+      padding: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ad-form h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .ad-form span {
+      color: #64748B;
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    .form-group { margin-bottom: 20px; }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      background: var(--secondary);
+      border: none;
+      padding: 16px;
+      border-radius: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 16px;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 900px) {
+      .ad-container { grid-template-columns: 1fr; }
+      .ad-info { padding: 48px 32px; text-align: center; }
+      .ad-form { padding: 48px 32px; }
+      .ad-info ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad-container">
+
+    <div class="ad-info">
+      <h1>Publica o teu anúncio</h1>
+      <p>Encontra rapidamente inquilinos para a tua casa com um processo simples e transparente.</p>
+      <ul>
+        <li>🏠 Anúncios visíveis para milhares de utilizadores</li>
+        <li>⚡ Contato direto com interessados</li>
+        <li>🔒 Seguro, sem intermediários desnecessários</li>
+      </ul>
+    </div>
+
+    <div class="ad-form">
+      <h2>Criar Anúncio</h2>
+      <span>Preenche os detalhes da tua casa para começar a arrendar</span>
+
+      <div class="form-group">
+        <label>Título do Anúncio</label>
+        <input type="text" placeholder="Ex: T2 moderno em Lisboa" />
+      </div>
+
+      <div class="form-group">
+        <label>Descrição</label>
+        <textarea placeholder="Descreve a tua casa, localização, características..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tipo de Imóvel</label>
+        <select>
+          <option>Apartamento</option>
+          <option>Moradia</option>
+          <option>Quarto</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Localização</label>
+        <input type="text" placeholder="Cidade ou zona" />
+      </div>
+
+      <div class="form-group">
+        <label>Preço Mensal (€)</label>
+        <input type="number" placeholder="Ex: 1200" />
+      </div>
+
+      <div class="form-group">
+        <label>Fotos</label>
+        <input type="file" multiple />
+      </div>
+
+      <button class="btn-submit">Publicar Anúncio</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
