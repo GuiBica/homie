@@ -88,15 +88,20 @@
       font-size: 14px;
     }
 
-    .search-box button {
-      background: var(--secondary);
-      border: none;
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+    .search-box button,
+    .search-box .search-btn {
+        background: var(--secondary);
+        border: none;
+        padding: 14px 24px;
+        border-radius: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
 
     .search-box button:hover {
       transform: translateY(-2px);
@@ -211,7 +216,7 @@
           <option>Moradia</option>
           <option>Quarto</option>
         </select>
-        <a href="../house-search/" class="search-btn">Procurars</a>
+        <a href="../house-search/" class="search-btn">Procurar</a>
       </div>
     </div>
 
