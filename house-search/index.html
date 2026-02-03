@@ -36,7 +36,11 @@
       cursor:pointer;
       transition: transform 0.2s ease;
       margin-left:16px;
+    
+      text-decoration: none;   /* ← ESTA LINHA */
+      display: inline-block;   /* ← E ESTA */
     }
+
 
     header .btn-post:hover { transform: translateY(-2px); }
 
@@ -99,7 +103,7 @@
   <header>
     <h1>Anúncios de Arrendamento</h1>
     <div>
-      <button class="btn-post">Publica o teu anúncio</button>
+      <a href="../create-add/" class="btn-post">Publica o teu anúncio</a>
     </div>
   </header>
 
