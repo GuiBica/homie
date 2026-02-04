@@ -3,58 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre Nós | Arrenda Já</title>
+  <title>Sobre Nós | homie</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --primary: #6a11cb;
+      --secondary: #2575fc;
+      --text-dark: #111827;
+      --text: #374151;
+      --bg-light: #f9fafb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: #1f2937;
+      background: linear-gradient(180deg, #ffffff, #f3f4f6);
+      color: var(--text);
     }
+
+    /* HEADER */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 32px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* PAGE */
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 80px 24px;
+      padding: 140px 24px 100px;
     }
-    .card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 48px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-    }
+
     h1 {
-      font-size: 42px;
-      margin-bottom: 16px;
-      color: #111827;
+      font-size: 44px;
+      margin-bottom: 24px;
+      color: var(--text-dark);
     }
+
     h2 {
-      font-size: 26px;
-      margin-top: 40px;
+      font-size: 28px;
+      margin-top: 64px;
       margin-bottom: 16px;
-      color: #111827;
+      color: var(--text-dark);
     }
+
     p {
       font-size: 18px;
       line-height: 1.7;
       margin-bottom: 16px;
-      color: #374151;
     }
-    ul {
-      padding-left: 20px;
-      margin-bottom: 24px;
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
     }
-    li {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #374151;
+
+    .feature {
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
     }
+
+    .feature h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+      font-size: 20px;
+    }
+
+    /* CTA */
     .cta {
-      margin-top: 48px;
+      margin-top: 80px;
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
     }
+
     .btn {
       padding: 14px 28px;
       font-size: 16px;
@@ -62,88 +109,108 @@
       border-radius: 12px;
       border: none;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
+
     .btn-primary {
-      background: #6a11cb;
-      color: #ffffff;
+      background: var(--primary);
+      color: white;
     }
+
     .btn-primary:hover {
-      background: #580fb3;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(106,17,203,0.3);
     }
+
     .btn-secondary {
-      background: #f3f4f6;
-      color: #111827;
-    }
-    .btn-secondary:hover {
       background: #e5e7eb;
+      color: var(--text-dark);
     }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 768px) {
-      .card {
-        padding: 32px;
-      }
       h1 {
         font-size: 34px;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="card">
-      <h1>Sobre Nós</h1>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="../landing/" class="logo">homie</a>
+  </header>
 
-      <p>
-        Encontrar casa para arrendar não devia ser complicado, caro ou stressante.
-      </p>
+  <!-- CONTENT -->
+  <main class="container">
 
-      <p>
-        O <strong>Arrenda Já</strong> nasceu com um objetivo simples: tornar o mercado de arrendamento em Portugal mais justo, transparente e acessível — tanto para quem procura casa como para quem a quer arrendar.
-      </p>
+    <h1>Arrendar casa não devia ser complicado</h1>
 
-      <h2>A Nossa Missão</h2>
-      <p>
-        Acreditamos que o arrendamento deve ser:
-      </p>
-      <ul>
-        <li>✔ Simples e intuitivo</li>
-        <li>✔ Transparente, sem custos escondidos</li>
-        <li>✔ Justo, sem intermediários desnecessários</li>
-      </ul>
+    <p>
+      O <strong>homie</strong> nasceu para simplificar o arrendamento em Portugal.
+      Sem intermediários desnecessários, sem comissões absurdas e sem processos confusos.
+    </p>
 
-      <h2>Como Funciona</h2>
-      <ul>
-        <li>🏠 Os proprietários publicam os seus imóveis de forma direta</li>
-        <li>🔍 Os inquilinos pesquisam, filtram e comparam anúncios facilmente</li>
-        <li>💬 Contacto direto entre proprietários e interessados</li>
-        <li>💰 Menos custos para todos</li>
-      </ul>
+    <p>
+      Criámos uma plataforma onde proprietários e inquilinos podem ligar-se de forma direta,
+      transparente e justa.
+    </p>
 
-      <h2>O Que Nos Torna Diferentes</h2>
-      <p>
-        O mercado tradicional de arrendamento é muitas vezes marcado por comissões elevadas, processos lentos e falta de transparência.
-      </p>
-      <p>
-        No Arrenda Já eliminamos intermediários sempre que possível e focamo-nos no que realmente importa: ajudar pessoas a encontrar casa de forma simples e justa.
-      </p>
+    <h2>A Nossa Missão</h2>
 
-      <h2>Pensado Para o Mercado Português</h2>
-      <p>
-        Quer esteja à procura da sua primeira casa, a mudar de cidade ou a colocar um imóvel no mercado, o Arrenda Já foi desenhado para responder às necessidades reais do arrendamento em Portugal.
-      </p>
-
-      <h2>A Nossa Visão</h2>
-      <p>
-        Queremos tornar-nos a plataforma de referência para arrendamento direto em Portugal, promovendo um mercado mais equilibrado, eficiente e transparente.
-      </p>
-
-      <div class="cta">
-        <button class="btn btn-primary">Procurar Casas</button>
-        <button class="btn btn-secondary">Publicar Anúncio</button>
+    <div class="features">
+      <div class="feature">
+        <h3>🔍 Simplicidade</h3>
+        <p>Pesquisar, filtrar e contactar anúncios sem fricção.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Transparência</h3>
+        <p>Sem custos escondidos, sem letras pequenas.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Justiça</h3>
+        <p>Contacto direto entre quem arrenda e quem procura.</p>
       </div>
     </div>
-  </div>
+
+    <h2>Como Funciona</h2>
+
+    <div class="features">
+      <div class="feature">
+        <h3>🏠 Proprietários</h3>
+        <p>Publicam os seus imóveis de forma simples e rápida.</p>
+      </div>
+      <div class="feature">
+        <h3>📍 Inquilinos</h3>
+        <p>Exploram anúncios, usam filtros e veem no mapa.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Menos custos</h3>
+        <p>Eliminamos intermediários sempre que possível.</p>
+      </div>
+    </div>
+
+    <h2>Pensado para Portugal</h2>
+    <p>
+      Seja para arrendar um quarto, um apartamento ou uma casa,
+      o homie foi desenhado a pensar no mercado português e nas suas realidades.
+    </p>
+
+    <div class="cta">
+      <a href="../house-search/" class="btn btn-primary">Procurar Casas</a>
+      <a href="../create-ad/" class="btn btn-secondary">Publicar Anúncio</a>
+    </div>
+
+  </main>
 
 </body>
 </html>
