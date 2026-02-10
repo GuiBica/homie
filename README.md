@@ -1,112 +1,145 @@
-# homie – Publish Listing Page
+# homie – Plataforma Digital de Arrendamento em Portugal
 
-## Overview
+## 🏠 Visão do Projeto
 
-This project is a responsive landing page that allows landlords to publish a rental property listing.
+**homie** é uma plataforma digital criada para simplificar o processo de arrendamento em Portugal.
 
-It is part of the **homie** platform concept — a modern, direct-to-tenant rental marketplace focused on simplicity, transparency, and clean design.
+O objetivo é desenvolver uma **plataforma completa de intermediação direta entre senhorios e inquilinos**, eliminando fricção, reduzindo custos e tornando o processo mais transparente e eficiente.
 
-The page includes:
-
-* A transparent fixed header
-* A two-column hero + form layout
-* A property submission form
-* Responsive behavior for mobile devices
-
-The project is built using **pure HTML and CSS** (no frameworks).
+A missão é modernizar o mercado de arrendamento português através de tecnologia, design intuitivo e processos simplificados.
 
 ---
 
-## 🎯 Purpose
+## 🎯 Problema que Queremos Resolver
 
-This page serves as the "Create Listing" flow where property owners can:
+O mercado de arrendamento em Portugal apresenta vários desafios:
 
-* Add listing title
-* Write a property description
-* Select property type
-* Add location
-* Set monthly price
-* Upload images
+* Processos pouco digitais
+* Comunicação dispersa
+* Falta de transparência
+* Elevadas comissões
+* Dificuldade em publicar e gerir anúncios
+* Experiência pouco intuitiva para utilizadores
 
-The goal is to provide a frictionless publishing experience with a modern UI.
+homie pretende centralizar e simplificar todo o processo numa única plataforma moderna.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Objetivo da Plataforma
+
+A plataforma irá permitir:
+
+### Para Senhorios
+
+* Publicar imóveis facilmente
+* Gerir anúncios
+* Receber contactos diretamente
+* Atualizar preços e disponibilidade
+* Gerir pedidos de visita
+
+### Para Inquilinos
+
+* Procurar casas com filtros avançados
+* Ver anúncios em modo lista ou mapa
+* Contactar senhorios diretamente
+* Criar alertas personalizados
+* Publicar pedidos de procura de casa
+
+---
+
+## 🧩 Funcionalidades Desenvolvidas até ao Momento
+
+Atualmente, o projeto inclui páginas front-end desenvolvidas em HTML e CSS:
+
+* Landing page principal
+* Página de login e registo
+* Página para publicar anúncio
+* Página de listagem com filtros
+* Página “Sobre Nós”
+
+Estas páginas representam a base visual e estrutural da futura plataforma.
+
+---
+
+## 🛠 Stack Tecnológica Atual
 
 * HTML5
 * CSS3
 * Google Fonts (Inter)
 
-No JavaScript framework or backend integration is currently included.
+O projeto encontra-se numa fase inicial focada em UI/UX.
 
 ---
 
-## 📁 Project Structure
+## 🔮 Próximas Fases de Desenvolvimento
+
+A evolução prevista inclui:
+
+* Sistema de autenticação (login/registo real)
+* Backend (Node.js / Python / Supabase ou equivalente)
+* Base de dados para anúncios
+* Upload e armazenamento de imagens
+* Sistema de mensagens interno
+* Integração de mapas
+* Sistema de filtros avançados
+* Painel de gestão de utilizador
+* Sistema de notificações
+* Otimização SEO
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 project-folder/
 │
-├── index.html (or publish.html)
+├── index.html
+├── login.html
+├── listings.html
+├── publish.html
+├── about.html
 └── README.md
 ```
 
-All styling is embedded directly inside the `<style>` tag within the HTML file.
+---
+
+## 🎨 Princípios de Design
+
+* Design moderno e vibrante
+* Interface minimalista e intuitiva
+* Gradientes dinâmicos
+* Header transparente e elegante
+* Experiência fluida e responsiva
 
 ---
 
-## 🎨 Design Principles
+## 📱 Responsividade
 
-* Modern gradient background
-* Soft shadows and large border radii
-* Clean typography (Inter)
-* Transparent fixed navigation header
-* Clear visual hierarchy
-* Mobile-first responsive layout
+A plataforma foi desenhada para funcionar tanto em desktop como em dispositivos móveis.
+
+Layouts ajustam-se automaticamente para garantir uma experiência consistente em qualquer tamanho de ecrã.
 
 ---
 
-## 📱 Responsiveness
+## 🧠 Visão a Longo Prazo
 
-The layout switches from a two-column design (desktop) to a single-column layout (mobile) when the screen width is below 900px.
+homie pretende tornar-se uma referência digital no arrendamento em Portugal, oferecendo:
 
-On smaller devices:
+* Experiência simples
+* Processos transparentes
+* Tecnologia eficiente
+* Custos reduzidos
 
-* The info panel becomes simplified
-* Padding is adjusted
-* The form remains fully usable
-
----
-
-## 🚀 How to Run
-
-1. Download or clone the repository.
-2. Open the HTML file in your browser.
-
-No build tools or dependencies are required.
+O foco é criar uma solução escalável e tecnologicamente robusta.
 
 ---
 
-## 🔮 Future Improvements
+## 👤 guibica
 
-Possible next steps for development:
-
-* Backend integration (Node.js / Supabase / Firebase)
-* Image upload storage
-* Form validation
-* Google Maps integration for location
-* Authentication system
-* Database connection for listings
-* SEO optimization
+Projeto desenvolvido como iniciativa para modernizar o mercado de arrendamento em Portugal.
 
 ---
 
-## 👤 Author
+## 📄 Licença
 
-Created as part of the homie rental marketplace concept.
-
----
-
-## 📄 License
-
-This project is open-source and free to use for educational or prototype purposes.
+Projeto em fase de desenvolvime
